@@ -1,0 +1,254 @@
+@keyframes slide{
+    from {
+        margin-top: 0%;
+        width: 80%
+      }
+    
+      to {
+        margin-top: 10%;
+        width: 80%;
+      }
+}
+@keyframes nslide{
+    from{
+        width: 0%;
+    }
+    to{
+        width: 0%;
+    }
+}
+
+@font-face{
+    font-family: ArcadeClassic;
+    font-family: Potra;
+    src: url("../font-family/font-arcade-clasic/ARCADECLASSIC.TTF");
+    src: url("../font-family/potra/Potra.ttf");
+}
+/*Parte del contenido, lo que parece una tarjeta*/
+.container{
+    width: 65%;
+    height: 95%;
+    background: linear-gradient(-90deg, #cebd98 54%, #1e1c27 46%); /*Se aplica la misma herramienta que en el fondo*/
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 7px;
+    box-shadow: rgba(0,0,0,.5) 0 5px 10px;
+    overflow: hidden;
+    display: flex;
+}
+
+/*Parte que divide el section .info1 y el aside .info en dos con forma de columnas en la tarjeta*/
+.info1{
+    width: 50%;
+    text-align: center;
+    display: block;
+}
+.info{
+    text-align: center;
+    width: 50%;
+    display: flex;
+}
+p{
+    color: #1e1c27;
+}
+
+/*Parte de la imagen, donde le doy forma*/
+
+img.pequeña{
+    width: 32.2%;
+    overflow: hidden;
+    margin-top: 10%;
+    margin-right: 13%;
+    border-left: 4px solid #fff;
+    border-right: 4px solid #fff;
+    animation-name: nslide;
+    animation-duration: 5s;
+    animation-iteration-count: 1;
+}
+
+
+/*Parte izquierda del lado derecho de la tarjeta, el section dentro del aside*/
+.mine{
+    width: 93%;
+}
+
+.title{
+    width:60%;
+    margin-left: 13%;
+    color: #fff;
+    font-family: 'Grenze', serif;
+    font-size: 40px;
+}
+.descrip p{
+    width:60%;
+    margin-left: 11%;
+    color: #fff;
+    font-family: 'Grenze', serif;
+    animation-name: slide;
+    animation-duration: 5s;
+    animation-iteration-count: 1;
+}
+
+.skilltit{
+    width: 100%;
+    font-family: 'Potra', serif;
+    text-align: center;
+    margin-top: 2%;
+    margin-bottom: 4%;
+    font-size: 60px;
+    font-weight: bold;
+}
+
+.skills{
+    width:100%;
+}
+.skills ul{
+    list-style: none;
+	margin: 0.5%;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+   
+}
+
+.skills li{
+    display: block;
+    margin: 2px 3% 0px 0px;
+}
+.skills i{
+    font-size: 76px;
+}
+.skills p{
+    font-family: 'Grenze', serif; 
+    font-size: 15px;
+    margin-left: 4px;
+    margin-bottom: 1px;
+    font-weight: bold;
+}
+
+/*Parte derecha del lado derecho de la tarjeta el aside dentro del aside*/
+.social{
+    width: 7%;
+    background: #1e1c27;
+    box-shadow: rgba(0,0,0,.5) 0 5px 10px;
+    padding-top: 28%;
+}
+
+.social ul{
+    list-style: none;
+    display: block;
+}
+.social ul li{
+    margin-bottom: 6px;
+}
+
+.social i{
+    color: #cccccc;
+}
+
+.social i:hover{
+    color: #cebd98;
+    cursor: pointer;
+}
+.social li a{
+    text-decoration: none;
+}
+
+
+/*Parte responsive en proceso*/
+@media(max-width:1700px){
+    .body{
+        height: 510px;
+    }
+    .container{
+        height: 75%;
+    }
+    .descrip p{
+        width: 70%;
+    }
+}
+@media(max-width:1150px){
+    .descrip{
+        margin-top: 40px;
+    }
+}
+
+@media(max-width:1000px){
+    .container{
+        width: 100%;
+    }
+}
+
+
+@media screen and (max-width:590px){
+    img.pequeña{
+        margin-left: 3%;
+    }
+
+    .skilltit{
+        font-size: 50px;
+    }
+}
+@media screen and (max-width:500px){
+    .container{
+        display: block;
+        background: linear-gradient(0deg, #cebd98 50%, #1e1c27 50%);
+        height: 90%;
+        margin-top: 10%;
+    }
+
+    .info{
+        width: 100%;
+        height: 50%;
+        flex-direction: column;
+    }
+    .info1{
+        width: 100%;
+        height: 50%;
+    }
+    img.pequeña{
+        width: 20%;
+        border-left: 2px solid #fff;
+        border-right: 2px solid #fff;
+        margin-top: 0%;
+        margin-left: 13%; 
+    }
+    .descrip{
+        margin-top: 20px;
+    }
+    .mine{
+        width: 100%;
+        height: 90%;
+        
+    }
+  
+    .skilltit{
+        margin-top: 0%;
+        margin-bottom: 2%;
+        font-size: 30px;
+    }
+    .skills i{
+        font-size: 50px;
+    }
+    .skills p{
+        font-size: 13px;
+    }
+    .social{
+        width: 100%;
+        height: 10%;
+        padding-top: 0%;
+        
+    }
+    .social ul{
+        width: 100%;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+    }
+    .social ul li{
+        margin-right: 7px;
+        margin-bottom: 2px;
+        margin-top: 5px;
+    }
+ 
+}
