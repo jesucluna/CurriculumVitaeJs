@@ -33,3 +33,7 @@
 - Common `.gitignore` file.
 - Using Components for work with and show each multipage.
 - Using `react-router-dom` for navigate around multiple components (works as a multi-page web).
+
+# [1.0.1]
+- Homepage display improved.
+- Size problem with `Education` and `Experience` pages fixed.

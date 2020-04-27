@@ -40,9 +40,6 @@ const Home = () => {
         <Section />
         <Aside />
       </div>
-      <div className={styles.second}>
-        <Nameletter c_name={styles.line2} p_text="System Engineering Student" />
-      </div>
     </div>
   );
 }
